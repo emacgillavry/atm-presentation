@@ -47,32 +47,47 @@
                 <section>
                     <h1>Tiling Amsterdam</h1>
                     <ul>
-                        <li class="fragment visible" data-fragment-index="1">6 tile sets (1625 &mdash; 1985)</li>
-                        <li class="fragment visible" data-fragment-index="2">Hosted at <a href="https://www.huygens.knaw.nl/?lang=en">Huygens ING</a></li>
-                        <li class="fragment visible" data-fragment-index="3">Freely available</li>
-                        <li class="fragment visible" data-fragment-index="4">Uses de facto XYZ map tiling schema</li>
-                        <li class="fragment visible" data-fragment-index="5">Web Mercator projection</li>
+                        <li class="fragment visible" data-fragment-index="1"><a href="http://amsterdamtimemachine.nl">amsterdamtimemachine.nl</a></li>
+                        <li class="fragment visible" data-fragment-index="2">6 tile sets (1625 &mdash; 1985)</li>
+                        <li class="fragment visible" data-fragment-index="3">Hosted at <a href="https://www.huygens.knaw.nl/?lang=en">Huygens ING</a></li>
+                        <li class="fragment visible" data-fragment-index="4">Freely available</li>
+                        <li class="fragment visible" data-fragment-index="5">Uses de facto XYZ map tiling schema</li>
+                        <li class="fragment visible" data-fragment-index="6">Web Mercator projection</li>
                     </ul>
                 </section>
                 <section data-background="img/tiles-loading.gif" style="width: 100%;">
-                        <h1>Tiles</h1>
-                        <p>256 by 256 pixels</p>
-                        <p>Same grid, same projection</p>
-                        <p class="fragment grow">Smaller tiles load faster than one biggy</p>
-                        <p>Seamless and speedy</p>
-                        <p><q>Slippy maps</q></p>
-                </section
+                    <h1>Tiles</h1>
+                    <p>256 by 256 pixels</p>
+                    <p>Same grid, same projection</p>
+                    <p class="fragment grow">Smaller tiles load faster than one biggy</p>
+                    <p>Seamless and speedy</p>
+                    <p><q>Slippy maps</q></p>
+                </section>
+                <section>
+                    <h1>Zoom levels</h1>
+                    <p>Each zoom level has its own set of tiles!</p>
+                    <div style="float:right; width:50%">
+                        <p>Increases quadratically:</p>
+                        <p>Zoom 0: 1 tile</p>
+                        <p>Zoom 1: 4 tiles</p>
+                        <p>Zoom 2: 16 tiles</p>
+                        <p>etc...</p>
+                    </div>
+                    <img src="img/tile-caches.png" style="float:left; width:50%">
+                    <a href="http://www.maptiler.org/google-maps-coordinates-tile-bounds-projection/"> Map with tile bounds</a>
+                </section>
+                <section data-background="img/vector-tiles.gif" style="width: 100%;">
+                </section>
             </div>
         </div>
-
         <script src="lib/js/head.min.js"></script>
         <script src="js/reveal.js"></script>
-
         <script>
             // More info about config & dependencies:
             // - https://github.com/hakimel/reveal.js#configuration
             // - https://github.com/hakimel/reveal.js#dependencies
             Reveal.initialize({
+                history: true,
                 dependencies: [
                     { src: 'plugin/markdown/marked.js' },
                     { src: 'plugin/markdown/markdown.js' },
